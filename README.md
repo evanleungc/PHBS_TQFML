@@ -7,7 +7,7 @@
 
 ## 2. Data Description
 * traindf.csv is the dataset that has been preprocessed. It is generated from a high frequency trading volume dataset and 5-mins frequency price dataset.
-* # of obs: 366310
+* Numbers of obs: 366310
 * Time range: 2017-09-04 to 2018-02-28
 * Variables Descriptions
 'code': str, stock code
