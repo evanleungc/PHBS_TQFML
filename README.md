@@ -24,10 +24,10 @@ Team members: <br />
 'buyret': float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1<br />
 'risk': float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1<br />
 'target': int, 1--if buyret > 0.02 and risk > -0.01, 0--else<br />
-'sumsell': the sum of today's selling amount<br />
-'sumbuy': the sum of today's buying amount<br />
-sell_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
-buy_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
+'sumsell': float, the sum of today's selling amount<br />
+'sumbuy': float, the sum of today's buying amount<br />
+sell_vol_[0...7]: float, separate selling amount into 8 groups based on scale<br />
+buy_vol_[0...7]: float, separate selling amount into 8 groups based on scale<br />
 
 ## 3. Exploratory Data Analysis (EDA)
 * Missing data analysis
