@@ -1,4 +1,9 @@
 # Predict low-risk profitable trading opportunity with high frequency trading data
+Team members: <br />
+梁康华 1601213555<br />
+李君涵 1601213559<br />
+纪雪云 1601213544<br />
+王昊炜 1601213612
 ## 1. Introduction
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
@@ -19,12 +24,12 @@
 'buyret': float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1<br />
 'risk': float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1<br />
 'target': int, 1--if buyret > 0.02 and risk > -0.01, 0--else<br />
-'sumsell': the sum of today's selling amount<br />
-'sumbuy': the sum of today's buying amount<br />
-sell_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
-buy_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
+'sumsell': float, the sum of today's selling amount<br />
+'sumbuy': float, the sum of today's buying amount<br />
+sell_vol_[0...7]: float, separate selling amount into 8 groups based on scale<br />
+buy_vol_[0...7]: float, separate selling amount into 8 groups based on scale<br />
 
-## 3. Exploratory Data Analasis (EDA)
+## 3. Exploratory Data Analysis (EDA)
 * Missing data analysis
 * Distribution check
 * Imbalance data check
