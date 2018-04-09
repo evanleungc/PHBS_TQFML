@@ -9,20 +9,20 @@
 * traindf.csv is the dataset that has been preprocessed. It is generated from a high frequency trading volume dataset and 5-mins frequency price dataset.
 * Numbers of obs: 366310
 * Time range: 2017-09-04 to 2018-02-28
-* Variables Descriptions
-'code': str, stock code
-'date': str, date
-'high': float, high price of the 5-min bar
-'low' : float, low price of the 5-min bar
-'buyprice': float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day
-'canbuy': int, 1--Indicate that I could buy in the last trading day (did not hit the price limitation); 0--Indicate the I could not buy in the last trading day (hit the price limitation)
-'buyret': float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1
-'risk': float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1
-'target': int, 1--if buyret > 0.02 and risk > -0.01, 0--else
-'sumsell': the sum of today's selling amount
-'sumbuy': the sum of today's buying amount
-sell_vol_[0...7]: separate selling amount into 8 groups based on scale
-buy_vol_[0...7]: separate selling amount into 8 groups based on scale
+* Variables Descriptions<br />
+'code': str, stock code<br />
+'date': str, date<br />
+'high': float, high price of the 5-min bar<br />
+'low' : float, low price of the 5-min bar<br />
+'buyprice': float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day<br />
+'canbuy': int, 1--Indicate that I could buy in the last trading day (did not hit the price limitation); 0--Indicate the I could not buy in the last trading day (hit the price limitation)<br />
+'buyret': float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1<br />
+'risk': float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1<br />
+'target': int, 1--if buyret > 0.02 and risk > -0.01, 0--else<br />
+'sumsell': the sum of today's selling amount<br />
+'sumbuy': the sum of today's buying amount<br />
+sell_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
+buy_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
 
 ## 3. Exploratory Data Analasis (EDA)
 * Missing data analysis
