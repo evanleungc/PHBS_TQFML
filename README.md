@@ -24,7 +24,7 @@
 sell_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
 buy_vol_[0...7]: separate selling amount into 8 groups based on scale<br />
 
-## 3. Exploratory Data Analasis (EDA)
+## 3. Exploratory Data Analysis (EDA)
 * Missing data analysis
 * Distribution check
 * Imbalance data check
