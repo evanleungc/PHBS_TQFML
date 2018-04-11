@@ -19,7 +19,7 @@
   * 'date': str, date
   * 'high': float, high price of the 5-min bar
   * 'low' : float, low price of the 5-min bar
-  * **'buyprice'**: float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day
+  * **'buyprice'**: float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day
   * 'canbuy': int, 1--Indicate that I could buy in the last trading day (did not hit the price limitation); 0--Indicate the I could not buy in the last trading day (hit the price limitation)
   * **'buyret'**: float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1
   * **'risk'**: float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1
