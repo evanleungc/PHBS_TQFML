@@ -19,11 +19,11 @@
   * 'date': str, date
   * 'high': float, high price of the 5-min bar
   * 'low' : float, low price of the 5-min bar
-  * <font face="黑体">'buyprice'</font>: float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day
+  * **'buyprice'**: float, the highest price in the last 4 bar (20 mins) in the last trading day, which is the price I assume that I could have bought in the last trading day
   * 'canbuy': int, 1--Indicate that I could buy in the last trading day (did not hit the price limitation); 0--Indicate the I could not buy in the last trading day (hit the price limitation)
-  * <font face="黑体">'buyret'</font>: float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1
-  * <font face="黑体">'risk'</font>: float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1
-  * <font face="黑体">'target'</font>: int, 1--if buyret > 0.02 and risk > -0.01, 0--else
+  * **'buyret'**: float, return I get if I buy with the 'buyprice'. Today's high / buyprice - 1
+  * **'risk'**: float, risk I bear if I buy with the 'buyprice'. Today's low / buyprice - 1
+  * **'target'**: int, 1--if buyret > 0.02 and risk > -0.01, 0--else
   * 'sumsell': float, the sum of today's selling amount
   * 'sumbuy': float, the sum of today's buying amount
   * sell_vol_[0...7]: float, separate selling amount into 8 groups based on scale
