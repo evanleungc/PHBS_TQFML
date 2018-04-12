@@ -11,7 +11,7 @@
 * These behavior may generate complicated pattern and our team will attempt to employ machine learning algorithms to find these patterns and exploit profitable opportunity.
 
 ## 2. Data Description
-* traindf.csv is the dataset that has been preprocessed. It is generated from a high frequency trading volume dataset and 5-mins frequency price dataset.
+* traindf.csv is the dataset that has been preprocessed. It is generated from a high frequency trading volume dataset and 5-mins frequency price dataset. [Example](http://vip.stock.finance.sina.com.cn/quotes_service/view/vMS_tradehistory.php?symbol=sh601208&date=2018-04-11)
 * Numbers of obs: 366310
 * Time range: 2017-09-04 to 2018-02-28
 * Variables Descriptions
