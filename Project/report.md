@@ -4,30 +4,30 @@
 * 李君涵 1601213559<br />
 * 纪雪云 1601213544<br />
 * 王昊炜 1601213612
-## 0. Structure
-* [1.Motivation](#1--motivation)
-* [2.Data Descriptions](#p_2)
-* [3.Feature Generation](#p_3)
-* [4.Missing Values or Imbalanced Dataset](#p_4)
-* [5.Training](#p_5) <br />
+## 0 Structure
+* [1.Motivation](#1-motivation)
+* [2.Data Descriptions](#2-data-descriptions)
+* [3.Feature Generation](#3-feature-generation)
+* [4.Missing Values or Imbalanced Dataset](#4-missing-values-or-imbalanced-dataset)
+* [5.Training](#5-training) <br />
 -[Logistic](#p_5.1) <br />
 -[SVM](#p_5.2) <br />
 -[DNN](#p_5.3) <br />
-## 1. Motivation
+## 1 Motivation
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
 * High frequency data is a more precise and instant catch of these change and behavior.
 * These behavior may generate complicated pattern and our team will attempt to employ machine learning algorithms to find these patterns and exploit profitable opportunity.
 [<<<](#home)
 <span id=p_2></span>
-## 2. Data Description
+## 2 Data Description
 * The dataset we used in this project consists of two basic dataset:
 * (1)**High Frequency Trading Volume Dataset**. It is collected by webspider from Sina Finance, which is a level-2 data consisting the 'Active Buy' or 'Active Sell' high frequency data
 * (2)**5-min Frequency Trading Data**. It is collected in wind, which consists open, high, low ,close, trading volume and trading amount in 5-min frequency level
 * We will combine these two basic dataset as the high frequency dataset we use in this project
 * All A-Stocks in China are included[<<<](#home)
 <span id=p_3></span>
-## 3. Feature Generation
+## 3 Feature Generation
 ### 3.1. Generate 5-min Features
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Dnn_Train.ipynb) <br />
 Variables Descriptions
@@ -64,7 +64,7 @@ The **larger number** will show the **larger buying power** over total selling p
 * Features should be **standardized** before training because they are different in units
 * **PCA** might be needed to handle the large amount of features[<<<](#home)
 <span id=p_4></span>
- ## 4. Exploratory Data Analaysis
+ ## 4 Exploratory Data Analaysis
 After data preprocessing, we can check whether there is any problem inside the datset
 ### 4.1. Missing Value Detection
 * **No missing** values in the datasets after features generations
@@ -76,7 +76,7 @@ After data preprocessing, we can check whether there is any problem inside the d
 * **No missing data**
 * **Serious imbalanced dataset[<<<](#home)
 <span id=p_5></span>
-## 5. Training
+## 5 Training
 <span id=p_5.1></span>
 5.1. Logistic Regression <br />
 [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
