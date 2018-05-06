@@ -8,7 +8,7 @@
 * [1.Motivation](#1-motivation)
 * [2.Data Descriptions](#2-data-descriptions)
 * [3.Feature Generation](#3-feature-generation)
-* [4.Missing Values or Imbalanced Dataset](#4-missing-values-or-imbalanced-dataset)
+* [4.Exploratory Data Analaysis](#4-exploratory-data-analaysis)
 * [5.Training](#5-training) <br />
 -[Logistic](#p_5.1) <br />
 -[SVM](#p_5.2) <br />
@@ -20,7 +20,7 @@
 * These behavior may generate complicated pattern and our team will attempt to employ machine learning algorithms to find these patterns and exploit profitable opportunity.
 [<<<](#home)
 <span id=p_2></span>
-## 2 Data Description
+## 2 Data Descriptions
 * The dataset we used in this project consists of two basic dataset:
 * (1)**High Frequency Trading Volume Dataset**. It is collected by webspider from Sina Finance, which is a level-2 data consisting the 'Active Buy' or 'Active Sell' high frequency data
 * (2)**5-min Frequency Trading Data**. It is collected in wind, which consists open, high, low ,close, trading volume and trading amount in 5-min frequency level
