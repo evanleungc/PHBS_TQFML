@@ -4,9 +4,8 @@
 * 李君涵 1601213559<br />
 * 纪雪云 1601213544<br />
 * 王昊炜 1601213612
-<span name=home></span>
 ## 0. Structure
-* [1.Motivation](#p_1)
+* [1.Motivation](#1.-Motivation)
 * [2.Data Descriptions](#p_2)
 * [3.Feature Generation](#p_3)
 * [4.Missing Values or Imbalanced Dataset](#p_4)
