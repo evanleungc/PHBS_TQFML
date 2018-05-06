@@ -37,7 +37,7 @@ Variables Descriptions
 
  Within the variables, there are two features we construct from the 5-min frequency data <br />
 * **amplitude:** This feature equals to (daily highest price/daily lowest price - 1), to measure the stock's variation. <br />
-* **above_mean:** It is an indicator, which equals to 1 if closing price is higher than the mean price at closing time, and 0 otherwise. [<<<](#0-structure)
+* **above_mean:** It is an indicator, which equals to 1 if closing price is higher than the mean price at closing time, and 0 otherwise. 
  ### 3.2. Generate High-Frequency Features
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Dnn_Train.ipynb) <br />
 Variable Descriptions
@@ -55,8 +55,7 @@ The **larger number** will show the **larger buying power** over total selling p
 * The **'sell\_rate_...'** is the opposite. It shows the selling power in a certain range over the total buying power.
 * **'total\_rate'** indicate the total buying power over the total selling power
 * **'pchange'** is the close price of the day / open price of the day - 1
-* The **'lag_1**' means the feature one day before the trading day. We have 'lag_1', 'lag_2', 'lag_3' in this dataset.
-
+* The **'lag_1**' means the feature one day before the trading day. We have 'lag_1', 'lag_2', 'lag_3' in this dataset.[<<<](#0-structure)
  ### 3.3 Conclusion on Features
 * There are **74** features to train
 * Features should be **standardized** before training because they are different in units
@@ -71,7 +70,13 @@ After data preprocessing, we can check whether there is any problem inside the d
 * Total observations: **347364**
 * Timerange: **2017-09-04 --- 2018-02-28**
 * **No missing data**
-* **Serious imbalanced dataset[<<<](#0-structure)
+* **Serious imbalanced dataset**[<<<](#0-structure)
 ## 5 Training
 5.1. Logistic Regression <br />
 [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
+5.3. Deep Neural Network <br />
+#### 5.3.1. Feature Preprocessing
+* **All features** are used in training
+* To increase training speed, the data are **standardized**
+* **'cw'** parameter in keras is used to tackle the 'imbalance dataset' problem
+* We train on 70% of the sample and test on 30% of the sample
