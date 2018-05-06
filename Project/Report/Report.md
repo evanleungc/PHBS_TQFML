@@ -27,7 +27,7 @@
 * All A-Stocks in China are included[<<<](#0-structure)
 ## 3 Feature Generation
 ### 3.1. Generate 5-min Features
-[Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Dnn_Train.ipynb) <br />
+[Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/FeatureGeneration.ipynb) <br />
 Variables Descriptions
 * **buyprice:** It is the highest price in the last 20 miniutes of a trading day. We are going to assume we buy at this price.
 * **canbuy:** If the stock has reached the price ceiling or floor, we assume that we cannot buy this stock and the variable will be 0. Otherwise, we assume that we can buy this stock and the variable will be 1. When doing the training, we will exclude all the samples with canbuy == 0.
@@ -39,7 +39,7 @@ Variables Descriptions
 * **amplitude:** This feature equals to (daily highest price/daily lowest price - 1), to measure the stock's variation. <br />
 * **above_mean:** It is an indicator, which equals to 1 if closing price is higher than the mean price at closing time, and 0 otherwise. 
  ### 3.2. Generate High-Frequency Features
-[Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Dnn_Train.ipynb) <br />
+[Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/FeatureGeneration.ipynb) <br />
 Variable Descriptions
 * The high frequency volume will be divided in a **quintile** fashion based on the following thresholds: <br />
 vollist = [0, 10000, 50000, 100000, 200000, 300000, 400000, 500000, infinity]
