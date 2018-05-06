@@ -73,11 +73,11 @@ After data preprocessing, we can check whether there is any problem inside the d
 * **Serious imbalanced dataset**[<<<](#0-structure)
 ## 5 Training
 ### 5.1. Logistic Regression <br />
-[Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
+ [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
 ### 5.1. Decision Tree <br />
-[Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
+ [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
 ### 5.3. Deep Neural Network <br />
-[Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
+ [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
 #### 5.3.1. Feature Preprocessing
 * **All features** are used in training
 * To increase training speed, the data are **standardized**
