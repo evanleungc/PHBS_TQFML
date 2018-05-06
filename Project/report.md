@@ -5,7 +5,7 @@
 * 纪雪云 1601213544<br />
 * 王昊炜 1601213612
 ## 0. Structure
-* [横线](#横线)
+* [1.横线](#横线)
 * [1.Motivation](#Motivation)
 * [2.Data Descriptions](#p_2)
 * [3.Feature Generation](#p_3)
@@ -14,7 +14,7 @@
 -[Logistic](#p_5.1) <br />
 -[SVM](#p_5.2) <br />
 -[DNN](#p_5.3) <br />
-### 1.横线
+### 横线
 ## Motivation
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
