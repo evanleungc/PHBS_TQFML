@@ -5,7 +5,7 @@
 * 纪雪云 1601213544<br />
 * 王昊炜 1601213612
 ## 0. Structure
-* [1.Motivation](#1. Motivation)
+* [1.Motivation](##-Motivation)
 * [2.Data Descriptions](#p_2)
 * [3.Feature Generation](#p_3)
 * [4.Missing Values or Imbalanced Dataset](#p_4)
@@ -14,7 +14,7 @@
 -[SVM](#p_5.2) <br />
 -[DNN](#p_5.3) <br />
 <span name=p_1></span>
-## 1. Motivation
+## Motivation
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
 * High frequency data is a more precise and instant catch of these change and behavior.
