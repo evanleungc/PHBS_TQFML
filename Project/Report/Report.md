@@ -91,10 +91,10 @@ After data preprocessing, we can check whether there is any problem inside the d
 * The loss function we used in back propagation is '**binary_crossentropy**'
 * **Adam optimizer** is used because it considers both momentum effect and avoids gradient exposure
 #### 5.3.3. Model Test
-When we are actually trading, we focus on whether we can profit from the model result. If the stock features predict '1', we will buy the stock and wait for profit. Therefore, '**Precision**' the right metric for us to evaluate the model.
-![dnn-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)
+When we are actually trading, we focus on whether we can profit from the model result. If the stock features predict '1', we will buy the stock and wait for profit. Therefore, '**Precision**' the right metric for us to evaluate the model.<br />
+![dnn-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)<br />
 The result is very encouraging.
 We use the trained models to predict out-of-sample data.
-The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 90%**.
-![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)
+The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 90%**.<br />
+![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 The ROC is 0.81, which is also another proof of the good result
