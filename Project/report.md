@@ -72,11 +72,28 @@ After data preprocessing, we can check whether there is any problem inside the d
 * **No missing data**
 * **Serious imbalanced dataset**[<<<](#0-structure)
 ## 5 Training
-5.1. Logistic Regression <br />
+### 5.1. Logistic Regression <br />
 [Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
-5.3. Deep Neural Network <br />
+### 5.3. Deep Neural Network <br />
+[Procedures in Code](#https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
 #### 5.3.1. Feature Preprocessing
 * **All features** are used in training
 * To increase training speed, the data are **standardized**
 * **'cw'** parameter in keras is used to tackle the 'imbalance dataset' problem
-* We train on 70% of the sample and test on 30% of the sample
+* We train on **70%** of the sample and test on **30%** of the sample
+#### 5.3.2. DNN Structures after hyperparameter tunning
+* We use **keras** package with tensorflow as kernel
+* **Sequential** Model is used
+* 1 input layer, 5 hidden layers, 1 output layers
+* Input and all the hidden layers employ '**ReLu**' activation function
+* The output layer employs '**Sigmoid**' activation function
+* Parameter cw = {0: 1, 1: 5.32} indicates that we give more weights on '1' label because of the **imbalance dataset**
+* The loss function we used in back propagation is '**binary_crossentropy**'
+* **Adam optimizer** is used because it considers both momentum effect and avoids gradient exposure
+#### 5.3.3. Model Test
+When we are actually trading, we focus on whether we can profit from the model result. If the stock features predict '1', we will buy the stock and wait for profit. Therefore, '**Precision**' the right metric for us to evaluate the model.
+
+The result is very encouraging.
+We use the trained models to predict out-of-sample data.
+The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 90%**.
+The ROC is 0.81, which is also another proof of the good result
