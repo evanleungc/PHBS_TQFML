@@ -87,6 +87,19 @@ After data preprocessing, we can check whether there is any problem inside the d
 ![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 ### 5.2. Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
+#### 5.2.1. Feature Preprocessing and choose of  hyperparameters
+* We train on **70%** of the sample and test on **30%** of the sample
+* **SMOTE** transformation is used to tackle the 'imbalance dataset' problem
+* To increase training speed, the data are **standardized**
+* We use **PCA** to reduce dimension
+#### 5.2.2. Hyperparameter Tunning
+* To determine the **parameter C** in logistic regression, we use the **grid search**.
+#### 5.2.3. Result
+* The precision is 0.30, which is based on default threshold 50%
+* Even if we increase the threshold, the result is still not good <br />
+![dtree-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-1.png)<br />
+* The ROC shows that the performance is not as good as that of logistic regression<br />
+![dtree-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-2.png)<br />
 ### 5.3. Deep Neural Network
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
 #### 5.3.1. Feature Preprocessing
