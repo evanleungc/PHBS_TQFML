@@ -29,7 +29,8 @@
 ## 3 Feature Generation
 ### 3.1. Generate 5-min Features
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/FeatureGeneration.ipynb) <br />
-Variables Descriptions
+Variables Descriptions <br />
+![dg_1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dg_1.png)<br />
 * **buyprice:** It is the highest price in the last 20 miniutes of a trading day. We are going to assume we buy at this price.
 * **canbuy:** If the stock has reached the price ceiling or floor, we assume that we cannot buy this stock and the variable will be 0. Otherwise, we assume that we can buy this stock and the variable will be 1. When doing the training, we will exclude all the samples with canbuy == 0.
 * **buyret:** The return of buying at buyprice and sell in the highest price in the next two days.
@@ -41,7 +42,8 @@ Variables Descriptions
 * **above_mean:** It is an indicator, which equals to 1 if closing price is higher than the mean price at closing time, and 0 otherwise. 
  ### 3.2. Generate High-Frequency Features
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/FeatureGeneration.ipynb) <br />
-Variable Descriptions
+Variable Descriptions <br />
+![dg_2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dg_2.png)<br />
 * The high frequency volume will be divided in a **quintile** fashion based on the following thresholds: <br />
 vollist = [0, 10000, 50000, 100000, 200000, 300000, 400000, 500000, infinity]
 * The '0' in 'buy_rate_0' is the ratio of buying volume in [0, 10000] to total selling volume, showing the **small traders buying power** over total selling power. The relationship is as follow: <br />
