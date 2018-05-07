@@ -86,7 +86,7 @@ After data preprocessing, we can check whether there is any problem inside the d
 * We use **PCA** to reduce dimension
 #### 5.1.2. Hyperparameter Tunning
 * To determine the **parameter C** in logistic regression, we use the **grid search**.
-* The best parameter is C = 0.1.
+* The best parameter is C = 1.
 #### 5.1.3. Result
 * The precision is 0.37, which is based on default threshold 50%
 * However, if we **increase the threshold**, the precision is better. If we buy stocks with **prediction of more than 85%**, we have **75% probability** to succeed<br />
