@@ -10,9 +10,10 @@
 * [3.Feature Generation](#3-feature-generation)
 * [4.Exploratory Data Analaysis](#4-exploratory-data-analaysis)
 * [5.Training](#5-training) <br />
--[Logistic](#p_5.1) <br />
+-[Logistic](#5.1.-logistic-regression) <br />
 -[SVM](#p_5.2) <br />
 -[DNN](#p_5.3) <br />
+* [6. Conclusion](#6-conclusion) <br />
 ## 1 Motivation
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
@@ -124,3 +125,7 @@ We use the trained models to predict out-of-sample data.
 The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 90%**.<br />
 ![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 The ROC is 0.81, which is also another proof of the good result
+## 6 Conclusion
+* Based on high frequency trading data, we **successfully** predict a profitable trading opportunity
+* **Parameter model (Logistic, DNN)** is better than Non-parameter model (Decision Tree) according to the test
+* However, the test may be **biased** because of the **short time period**
