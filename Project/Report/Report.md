@@ -88,7 +88,9 @@ After data preprocessing, we can check whether there is any problem inside the d
 * To determine the **parameter C** in logistic regression, we use the **grid search**.
 #### 5.1.3. Result
 * The precision is 0.37, which is based on default threshold 50%
-* However, if we raise the threshold, the precision should be quite high because the ROC is 0.8.[<<<](#0-structure)<br />
+* However, if we **increase the threshold**, the precision is better. If we buy stocks with **prediction of more than 85%**, we have **75% probability** to succeed<br />
+![log-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)<br />
+* The **ROC is 0.8**, whichs is a good proof that the model works quite well.[<<<](#0-structure)<br />
 ![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 ### 5-2 Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
@@ -101,9 +103,9 @@ After data preprocessing, we can check whether there is any problem inside the d
 * To determine the **parameter max_depth** in decision tree, we use the **grid search**.
 #### 5.2.3. Result
 * The precision is 0.30, which is based on default threshold 50%
-* Even if we increase the threshold, the result is still not good <br />
+* Even if we increase the threshold, the result is **still not good** <br />
 ![dtree-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-1.png)<br />
-* The ROC shows that the performance is not as good as that of logistic regression[<<<](#0-structure)<br />
+* The **ROC** shows that the performance is **not as good as that of logistic regression**[<<<](#0-structure)<br />
 ![dtree-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-2.png)<br />
 ### 5-3 Deep Neural Network
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
@@ -126,7 +128,7 @@ When we are actually trading, we focus on whether we can profit from the model r
 ![dnn-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)<br />
 The result is very encouraging.
 We use the trained models to predict out-of-sample data.
-The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 85%**.<br />
+The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **85% probability to succeed** if we buy stocks with **model prediction probabilities more than 75%**.<br />
 ![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 The ROC is 0.81, which is also another proof of the good result
 [<<<](#0-structure)
