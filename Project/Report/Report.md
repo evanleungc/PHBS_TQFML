@@ -10,7 +10,7 @@
 * [3.Feature Generation](#3-feature-generation)
 * [4.Exploratory Data Analaysis](#4-exploratory-data-analaysis)
 * [5.Training](#5-training) <br />
--[Logistic](#<l1>) <br />
+-[Logistic](#5-1-logistic-regression) <br />
 -[SVM](#p_5.2) <br />
 -[DNN](#p_5.3) <br />
 * [6. Conclusion](#6-conclusion) <br />
@@ -73,8 +73,7 @@ After data preprocessing, we can check whether there is any problem inside the d
 * **No missing data**
 * **Serious imbalanced dataset**[<<<](#0-structure)
 ## 5 Training
-<l1>
-### 5.1. Logistic Regression
+### 5-1 Logistic Regression
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
 #### 5.1.1. Feature Preprocessing and choose of  hyperparameters
 * We train on **70%** of the sample and test on **30%** of the sample
