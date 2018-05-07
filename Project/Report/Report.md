@@ -15,10 +15,12 @@
 -[DNN](#5-3-deep-neural-network) <br />
 * [6. Conclusion](#6-conclusion) <br />
 ## 1 Motivation
-* In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
-* These traders tend to generate abnormal trading volume or price fluctuation in the market.
-* High frequency data is a more precise and instant catch of these change and behavior.
-* These behavior may generate complicated pattern and our team will attempt to employ machine learning algorithms to find these patterns and exploit profitable opportunity.
+* On one hand, the study of market microstructure, many researches have proved that people with **private information** will buy and sell before non-informed traders.
+* On the other hand, in China, **manipulating the market** does exist. People with **private information** tends to manipulate the market and earn money
+* Combining the theory and the phenomenon in China, we would like to see whether we can make a profit based on them.
+* Traders manipulating the market tend to generate **abnormal trading volume** or **price fluctuation** in the market.
+* **High-frequency** data is a more precise and instant catch of these change and behavior.
+* These behavior may generate **complicated pattern** and our team will attempt to employ **machine learning** algorithms to find these patterns and exploit profitable opportunity.
 [<<<](#0-structure)
 ## 2 Data Descriptions
 * The dataset we used in this project consists of two basic dataset:
