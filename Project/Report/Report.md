@@ -134,6 +134,7 @@ The ROC is 0.81, which is also another proof of the good result
 [<<<](#0-structure)
 ## 6 Conclusion
 * Based on high frequency trading data, we **successfully** predict a profitable trading opportunity
+* The best model is DNN because the **precision increases much faster with the threshold and reaches the highest** compared to the other two methods
 * **Parameter model (Logistic, DNN)** is better than Non-parameter model (Decision Tree) according to the test
 * However, the test may be **biased** because of the **short time period**
 [<<<](#0-structure)
