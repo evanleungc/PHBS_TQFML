@@ -89,9 +89,9 @@ After data preprocessing, we can check whether there is any problem inside the d
 #### 5.1.3. Result
 * The precision is 0.37, which is based on default threshold 50%
 * However, if we **increase the threshold**, the precision is better. If we buy stocks with **prediction of more than 85%**, we have **75% probability** to succeed<br />
-![log-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)<br />
+![log-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/log-1.png)<br />
 * The **ROC is 0.8**, whichs is a good proof that the model works quite well.[<<<](#0-structure)<br />
-![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
+![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/log-2.png)<br />
 ### 5-2 Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
 #### 5.2.1. Feature Preprocessing and choose of  hyperparameters
