@@ -93,7 +93,7 @@ After data preprocessing, we can check whether there is any problem inside the d
 * To increase training speed, the data are **standardized**
 * We use **PCA** to reduce dimension
 #### 5.2.2. Hyperparameter Tunning
-* To determine the **parameter C** in logistic regression, we use the **grid search**.
+* To determine the **parameter max_depth** in decision tree, we use the **grid search**.
 #### 5.2.3. Result
 * The precision is 0.30, which is based on default threshold 50%
 * Even if we increase the threshold, the result is still not good <br />
@@ -116,8 +116,8 @@ After data preprocessing, we can check whether there is any problem inside the d
 * Parameter cw = {0: 1, 1: 5.32} indicates that we give more weights on '1' label because of the **imbalance dataset**
 * The loss function we used in back propagation is '**binary_crossentropy**'
 * **Adam optimizer** is used because it considers both momentum effect and avoids gradient exposure
-#### 5.3.3. Model Test
-When we are actually trading, we focus on whether we can profit from the model result. If the stock features predict '1', we will buy the stock and wait for profit. Therefore, '**Precision**' the right metric for us to evaluate the model.<br />
+#### 5.3.3. Result
+When we are actually trading, we focus on whether we can profit from the model result. If the stock features predict '1', we will buy the stock and wait for profit. Therefore, '**Precision**' is the right metric for us to evaluate the model.<br />
 ![dnn-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-1.png)<br />
 The result is very encouraging.
 We use the trained models to predict out-of-sample data.
