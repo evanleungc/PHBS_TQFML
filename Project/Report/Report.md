@@ -11,7 +11,7 @@
 * [4.Exploratory Data Analaysis](#4-exploratory-data-analaysis)
 * [5.Training](#5-training) <br />
 -[Logistic](#5-1-logistic-regression) <br />
--[SVM](#5-2-decision-tree) <br />
+-[Decision Tree](#5-2-decision-tree) <br />
 -[DNN](#5-3-deep-neural-network) <br />
 * [6. Conclusion](#6-conclusion) <br />
 ## 1 Motivation
