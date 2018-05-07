@@ -86,9 +86,8 @@ After data preprocessing, we can check whether there is any problem inside the d
 * To determine the **parameter C** in logistic regression, we use the **grid search**.
 #### 5.1.3. Result
 * The precision is 0.37, which is based on default threshold 50%
-* However, if we raise the threshold, the precision should be quite high because the ROC is 0.8.<br />
+* However, if we raise the threshold, the precision should be quite high because the ROC is 0.8.[<<<](#0-structure)<br />
 ![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
-[<<<](#0-structure)
 ### 5-2 Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
 #### 5.2.1. Feature Preprocessing and choose of  hyperparameters
@@ -102,9 +101,8 @@ After data preprocessing, we can check whether there is any problem inside the d
 * The precision is 0.30, which is based on default threshold 50%
 * Even if we increase the threshold, the result is still not good <br />
 ![dtree-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-1.png)<br />
-* The ROC shows that the performance is not as good as that of logistic regression<br />
+* The ROC shows that the performance is not as good as that of logistic regression[<<<](#0-structure)<br />
 ![dtree-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-2.png)<br />
-[<<<](#0-structure)
 ### 5-3 Deep Neural Network
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
 #### 5.3.1. Feature Preprocessing
