@@ -10,9 +10,10 @@
 * [3.Feature Generation](#3-feature-generation)
 * [4.Exploratory Data Analaysis](#4-exploratory-data-analaysis)
 * [5.Training](#5-training) <br />
--[Logistic](#p_5.1) <br />
--[SVM](#p_5.2) <br />
--[DNN](#p_5.3) <br />
+-[Logistic](#5-1-logistic-regression) <br />
+-[SVM](#5-2-decision-tree) <br />
+-[DNN](#5-3-deep-neural-network) <br />
+* [6. Conclusion](#6-conclusion) <br />
 ## 1 Motivation
 * In the study of market microstructure, many researches prove that people with private information will buy and sell before non-informed traders.
 * These traders tend to generate abnormal trading volume or price fluctuation in the market.
@@ -72,7 +73,7 @@ After data preprocessing, we can check whether there is any problem inside the d
 * **No missing data**
 * **Serious imbalanced dataset**[<<<](#0-structure)
 ## 5 Training
-### 5.1. Logistic Regression
+### 5-1 Logistic Regression
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/logistic.ipynb)
 #### 5.1.1. Feature Preprocessing and choose of  hyperparameters
 * We train on **70%** of the sample and test on **30%** of the sample
@@ -85,7 +86,8 @@ After data preprocessing, we can check whether there is any problem inside the d
 * The precision is 0.37, which is based on default threshold 50%
 * However, if we raise the threshold, the precision should be quite high because the ROC is 0.8.<br />
 ![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
-### 5.2. Decision Tree
+[<<<](#0-structure)
+### 5-2 Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
 #### 5.2.1. Feature Preprocessing and choose of  hyperparameters
 * We train on **70%** of the sample and test on **30%** of the sample
@@ -100,7 +102,8 @@ After data preprocessing, we can check whether there is any problem inside the d
 ![dtree-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-1.png)<br />
 * The ROC shows that the performance is not as good as that of logistic regression<br />
 ![dtree-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-2.png)<br />
-### 5.3. Deep Neural Network
+[<<<](#0-structure)
+### 5-3 Deep Neural Network
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
 #### 5.3.1. Feature Preprocessing
 * **All features** are used in training
@@ -124,3 +127,9 @@ We use the trained models to predict out-of-sample data.
 The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **75% probability to succeed** if we buy stocks with **model prediction probabilities more than 90%**.<br />
 ![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
 The ROC is 0.81, which is also another proof of the good result
+[<<<](#0-structure)
+## 6 Conclusion
+* Based on high frequency trading data, we **successfully** predict a profitable trading opportunity
+* **Parameter model (Logistic, DNN)** is better than Non-parameter model (Decision Tree) according to the test
+* However, the test may be **biased** because of the **short time period**
+[<<<](#0-structure)
