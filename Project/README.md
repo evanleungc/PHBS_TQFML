@@ -37,7 +37,7 @@ Variables Descriptions <br />
 * **canbuy:** If the stock has reached the price ceiling or floor, we assume that we cannot buy this stock and the variable will be 0. Otherwise, we assume that we can buy this stock and the variable will be 1. When doing the training, we will exclude all the samples with canbuy == 0.
 * **buyret:** The return of buying at buyprice and sell in the highest price in the next two days.
 * **risk:** The loss of buying at buyprice and sell in the lowest price in the next two days.
-* **target:** The training target we use in this project. If in next two days, the buyret > 0.03 and risk < -0.02, we consider it as a low-risk profitable trading opportunity and we set the label to be 1. Otherwise, we set it to be 0. 
+* **target:** The training target we use in this project. If in next two days, the **buyret > 0.03 and risk > -0.02**, we consider it as a low-risk profitable trading opportunity and we set the label to be 1. Otherwise, we set it to be 0. 
 
  Within the variables, there are two features we construct from the 5-min frequency data <br />
 * **amplitude:** This feature equals to 'daily highest price/daily lowest price - 1', to measure the stock's variation. <br />
@@ -137,6 +137,6 @@ The ROC is 0.81, which is also another proof of the good result
 ## 6 Conclusion
 * Based on high frequency trading data, we **successfully** predict a profitable trading opportunity
 * The best model is DNN because the **precision increases much faster with the threshold and reaches the highest** compared to the other two methods
-* **Parameter model (Logistic, DNN)** is better than Non-parameter model (Decision Tree) according to the test
+* **Parametric model (Logistic, DNN)** is better than Non-parametric model (Decision Tree) according to the test
 * However, the test may be **biased** because of the **short time period**
 [<<<](#0-structure)
