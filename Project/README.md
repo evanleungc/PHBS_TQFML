@@ -1,4 +1,5 @@
 # Predict low-risk profitable trading opportunity with high frequency trading data
+This is the brief proposal. Click [here](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/Report.md) to view the full report
 ## Team members: <br />
 * 梁康华 1601213555<br />
 * 李君涵 1601213559<br />
