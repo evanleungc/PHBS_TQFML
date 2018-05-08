@@ -86,12 +86,12 @@ After data preprocessing, we can check whether there is any problem inside the d
 * We use **PCA** to reduce dimension
 #### 5.1.2. Hyperparameter Tunning
 * To determine the **parameter C** in logistic regression, we use the **grid search**.
-* The best parameter is C = 0.1.
+* The best parameter is C = 1.
 #### 5.1.3. Result
 * The precision is 0.37, which is based on default threshold 50%
 * However, if we **increase the threshold**, the precision is better. If we buy stocks with **prediction of more than 85%**, we have **75% probability** to succeed<br />
 ![log-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/log-1.png)<br />
-* The **ROC is 0.8**, whichs is a good proof that the model works quite well.[<<<](#0-structure)<br />
+* The **AUC is 0.8**, whichs is a good proof that the model works quite well.[<<<](#0-structure)<br />
 ![log-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/log-2.png)<br />
 ### 5-2 Decision Tree
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/Decision%20Tree.ipynb)
@@ -107,22 +107,20 @@ After data preprocessing, we can check whether there is any problem inside the d
 * The precision is 0.30, which is based on default threshold 50%
 * Even if we increase the threshold, the result is **still not good** <br />
 ![dtree-1](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-1.png)<br />
-* The **ROC** shows that the performance is **not as good as that of logistic regression**[<<<](#0-structure)<br />
+* The **ROC Curve** shows that the performance is **not as good as that of logistic regression**[<<<](#0-structure)<br />
 ![dtree-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dtree-2.png)<br />
 ### 5-3 Deep Neural Network
 [Procedures in Code](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Code/DNN.ipynb)
 #### 5.3.1. Feature Preprocessing
 * **All features** are used in training
 * To increase training speed, the data are **standardized**
-* **'cw'** parameter in keras is used to tackle the 'imbalance dataset' problem
 * We train on **70%** of the sample and test on **30%** of the sample
-#### 5.3.2. DNN Structures after hyperparameter tunning
+#### 5.3.2. DNN Structures and hyperparameter tunning
 * We use **keras** package with tensorflow as kernel
 * **Sequential** Model is used
 * 1 input layer, 5 hidden layers, 1 output layers
 * Input and all the hidden layers employ '**ReLu**' activation function
 * The output layer employs '**Sigmoid**' activation function
-* Parameter cw = {0: 1, 1: 5.32} indicates that we give more weights on '1' label because of the **imbalance dataset**
 * The loss function we used in back propagation is '**binary_crossentropy**'
 * **Adam optimizer** is used because it considers both momentum effect and avoids gradient exposure
 #### 5.3.3. Result
@@ -132,7 +130,7 @@ The result is very encouraging.
 We use the trained models to predict out-of-sample data.
 The graph above shows that if we increase the thredsholds of predicting labels as 1, the precision increases gradually. We have **85% probability to succeed** if we buy stocks with **model prediction probabilities more than 75%**.<br />
 ![dnn-2](https://github.com/evanleungc/PHBS_TQFML/blob/master/Project/Report/photos/dnn-2.png)<br />
-The ROC is 0.81, which is also another proof of the good result
+The **AUC is 0.81**, which is also another proof of the good result
 [<<<](#0-structure)
 ## 6 Conclusion
 * Based on high frequency trading data, we **successfully** predict a profitable trading opportunity
