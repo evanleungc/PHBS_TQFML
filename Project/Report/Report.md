@@ -121,7 +121,6 @@ After data preprocessing, we can check whether there is any problem inside the d
 * 1 input layer, 5 hidden layers, 1 output layers
 * Input and all the hidden layers employ '**ReLu**' activation function
 * The output layer employs '**Sigmoid**' activation function
-* Parameter cw = {0: 1, 1: 5.32} indicates that we give more weights on '1' label because of the **imbalance dataset**
 * The loss function we used in back propagation is '**binary_crossentropy**'
 * **Adam optimizer** is used because it considers both momentum effect and avoids gradient exposure
 #### 5.3.3. Result
