@@ -114,7 +114,6 @@ After data preprocessing, we can check whether there is any problem inside the d
 #### 5.3.1. Feature Preprocessing
 * **All features** are used in training
 * To increase training speed, the data are **standardized**
-* **'cw'** parameter in keras is used to tackle the 'imbalance dataset' problem
 * We train on **70%** of the sample and test on **30%** of the sample
 #### 5.3.2. DNN Structures and hyperparameter tunning
 * We use **keras** package with tensorflow as kernel
